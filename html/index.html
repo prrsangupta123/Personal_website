@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prerna Gupta</title>
+<link rel="stylesheet" type="text/css" href="../css/CSS.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="interest.html">Interests</a>
+<a href="image.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+<a href="form.html">Form</a>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../img/images.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+<div class="content">
+<h1 class="one">
+<marquee scrollamount="30"
+direction="left"
+behavior="slide">
+Hi, I am Prerna Gupta</marquee></h1>
+<h3 align="center">
+UG1-CSE student at IIIT-H</h3>
+<p>I love listening and playing music. I want to become a top programmer and also want to work for Cyber Security. I like community work,Temple activities and volunteer work also. I like to live mostly alone and in a world of deep thinking. I want to learn about everything which is there in the world.
+            </p>
+<img src="../img/IMG_20180729_090406875.jpg" style="width:20%;">
+<h2 align="center">Click on the image to see the magic</h2>
+<script src="../js/javascript.js "></script> </div>
+</body>
+</html>

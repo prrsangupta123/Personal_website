@@ -1,0 +1,44 @@
+body#hello 
+{
+ margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+background:url("/home/prerna/Desktop/intro to SS/christmas-bokeh-vector-background.jpg");
+}
+body#bye
+{
+ margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.content {
+  padding: 16px;
+}
+
+.one
+{
+text-align:center;
+font-family:'Kaushan Script',cursive;
+padding:0 20px;
+font-size:80px;
+}
+img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+.two
+{
+font color:"brown";
+font-family:'Kaushan Script',cursive;
+padding:0 20px;
+font-size:40px;
+}
+

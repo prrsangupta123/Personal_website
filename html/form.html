@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORM</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/form.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="interest.html">Interests</a>
+<a href="image.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+<a href="form.html">Form</a></div>
+<br>
+<br>
+<div class="container-fluid formHolder">
+        <div class="row">
+        </div>
+        <form name="skillForm" method="POST" onsubmit="return validateForm()">
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label"><h2 style="color:white;">YOUR NAME</h2></label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputSkill" class="col-sm-2 col-form-label"><h2 style="color:white;">Skill</h2></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="skillName" name="skillName" placeholder="Skill name">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0"><h2 style="color:white;">Level</h2></legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Beginner">
+                            <label class="form-check-label" for="gridRadios2">
+                                <h3 style="color:white;">Beginner</h3>&escp;
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Intermediate">
+                            <label class="form-check-label" for="gridRadios3">
+                                <h3 style="color:white;">Intermediate</h3>&escp;
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Proficient" checked="">
+                            <label class="form-check-label" for="gridRadios1">
+                                <h3 style="color:white;">Proficient</h3>&escp;
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2"><h3 style="color:white;">Choose years</h3></div>
+                <div class="col-sm-10">
+                    <div class="dropdown">
+                        <select class="form-control" id="time">
+                            <option value="" selected="selected" disabled="" hidden="">Choose years</option>
+                            <option value=" <1">in Last one year</option>&escp;
+                            <option value=" 1-5">between 1 and 5 years ago</option>&escp;
+                            <option value=">5">more that 5 years ago</option>%escp;
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="text-right col-sm-12">
+                    <button type="submit" id="newE" class="btn btn-primary"><h2 align="center">Submit</h2></button>
+                </div>
+            </div>
+        </form>
+    </div>
+<br>
+<div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 style="color:white;">
+                    FINAL DATA
+                </h2>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-dark table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="4" class="cen"> RATING </th>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-center"><h3 style="color:white;">Name</h3></th>
+                        <th scope="col" class="text-center"><h3 style="color:white;">Skill</h3></th>
+                        <th scope="col" class="text-center"><h3 style="color:white;">Level</h3></th>
+			<th scope="col" class="text-center"><h3 style="color:white;">Years known</h3></th>
+                    </tr>
+                </thead>
+                <tbody id="toInsert">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </script>
+<br>
+<br>
+<h2 align="center" style="color:white;">Thanks for Visit</h2>
+</script>
+<p><button onclick="clickCounter()" type="button"><h3>Click me to like!</h3></button></p>
+<div id="result"></div>
+<br>
+<script src="../js/form.js"></script>
+</body>
+</html>

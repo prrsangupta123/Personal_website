@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+	background-image :url("/home/prerna/Downloads/natural-beauty-nature-hd-wallpaper-no-0010-1920x1200.jpg");
+}
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+position:fixed;
+top:0;
+width:100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 992px)
+{body
+{
+font-weight:bold;
+}
+} 
+@media screen and (max-width: 600px) 
+{
+body
+{
+font-weight:bold;
+}
+}
+@media screen and (min-width:680px)
+{
+body{
+font-weight:bold;
+}
+}
+.one
+{
+text-align:center;
+font-family:'Kaushan Script',cursive;
+padding:0 20px;
+text-shadow: 2px 2px;
+font-size:80px;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
